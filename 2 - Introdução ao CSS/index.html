@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+        <!-- 4 - External CSS -->
+    <!-- cascading style sheets -->
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/Lists.css" />
+    <link rel="stylesheet" href="css/titles.css" />
+
+
+    <!-- 3 - Interno -->
+     
+
+    <style>
+      h1 {
+        color: purple;
+      }
+      p {
+        color: gold;
+        font-size: 20px;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <!--
+    Maneiras de adicionar CSS
+    - Inline: Como atributo
+    - Interno: Na tag Head
+    - Externo: Arquivo importado [Recomendado]
+
+    Anatomia
+     Tag: Valor;
+    -->
+
+    <!-- 1 - Inline CSS -->
+    <!-- - Usa o atributo style direto no elemento -->
+    <!-- - Não é recomendado -->
+
+    <h1 style="color: red">Hello World</h1>
+    <h1 style="color: blueviolet">Bye</h1>
+
+    <!-- 2 - Multiplas regras -->
+    <h1
+      style="color: blueviolet; font-size: 50px; border-bottom: 1px solid red">
+      Mudar cor e tamanho da fonte
+    </h1>
+
+    <!-- 3 - Internal CSS -->
+    <!-- - Usa a tag style dentro do head -->
+    <!-- - Não é recomendado -->
+    <h1>Internal CSS</h1>
+
+    <p>Eu fui estilizado pelo CSS interno</p>
+    <p>Eu tambem fui estilizado pelo CSS interno</p>
+
+    <!-- 4 - External CSS -->
+    <!-- cascading style sheets -->
+    <h3> Meu titulo verde </h3>
+
+    <!-- 5 - Ordem de precedência -->
+    <!-- Inline > Interno > Externo -->
+    <!-- No entanto se o Externo for importado por ultimo ele tem precedência -->
+
+    <p>Eu sou dourado</p>
+    <p style="color: red">Eu sou vermelho</p>
+
+    <!-- 6 - multiple files -->
+    <!-- - Pode-se importar varios arquivos CSS -->
+    <h2>Lista de compras</h2>
+    <ul>
+      <li>Arroz</li>
+      <li>Feijão</li>
+      <li>Macarrão</li> 
+    </ul>
+    </body>
+
+    <!-- 7 - Desafio 2 -->
+    <h4> Meu titulo azul </h4>
+    <h4 style="color: red;"> Meu titulo vermelho </h4>
+
+    <!-- 8 - Classes
+    - Usa o ponto (.) para identificar
+    - Pode ser usado várias vezes
+    - Exemplo: -->
+    <p class="paragraph">Eu sou um parágrafo</p>
+    <p class="paragraph">Eu sou outro parágrafo</p>
+    <p class="paragraph">Eu sou mais um parágrafo</p>
+
+    <!-- 9 - ID
+    - Usa o jogo da velha (#) para identificar
+    - Pode ser usado apenas uma vez
+    - Exemplo: -->
+    <h1 id="exclusive-title">Eu sou um título com ID</h1>
+
+    <!-- 10 - Multiplas regras, Ordem de Seletores
+    - ID > Class > Tag
+    - Exemplo: -->
+    <h2 id="outro-titulo" class="titulo">Eu sou um título com ID e Class</h2>
+    <h2 class="titulo">Eu sou um título com Class</h2>
+    <h2>Eu sou um título</h2>
+
+    <!-- 11 - Cores
+    - Pode ser usado nomes, RGB, HEX, HSL
+    -->
+    <h1 style="color: black;">Cores no CSS</h1>
+    <!-- Nomes de cores -->
+    <p class="color-name">Eu sou um parágrafo com cor por nome</p>
+    <!-- HEX -->
+    <p class="color-hex">Eu sou um parágrafo com cor por HEX</p>
+    <p class="simple-hex">Eu sou um parágrafo com cor por HEX Simplificado</p>
+    <!-- RGB -->
+    <p class="color-rgb">Eu sou um parágrafo com cor por RGB</p>
+    <p class="mixed-rgb">Eu sou um parágrafo com cor por RGB misturado</p>
+    <p class="color-rgba">Eu sou um parágrafo com cor por RGBA</p>
+    <!-- HSL -->
+    <!-- Raramente usado -->
+    <p class="color-hsl">Eu sou um parágrafo com cor por HSL</p>
+  </body>
+
+</html>

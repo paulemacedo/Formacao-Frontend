@@ -10,3 +10,66 @@ h3 {
 p {
     color: violet;
 }
+
+/* classes */
+.paragraph {
+    color: orange;
+    background-color: black;
+    padding: 5px;
+}
+
+/* IDs */
+#exclusive-title {
+    color: yellow;
+    background-color: purple;
+    padding: 10px;
+}
+
+/* Ordem das Regras */
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 4px solid blue;
+}
+
+#outro-titulo {
+    border-bottom: 6px solid green;
+}   
+
+/* Nome de cores */
+.color-name {
+    color: crimson;
+}
+
+/* Hexadecimal */
+.color-hex{
+    color: #4b1b57;
+}
+
+/* Aprofundando em HEX */
+.simple-hex {
+    color: #275;
+}
+
+/* RGB */
+.color-rgb {
+    color: rgb(110, 0, 0);
+}
+
+/* Mixed RGB */
+.mixed-rgb {
+    color: rgb(199, 161, 114);
+}
+
+/* RGBA */
+.color-rgba {
+    color: rgba(197, 183, 51, 0.4);
+}
+
+/* HSL */
+.color-hsl {
+    color: hsl(286, 80%, 35%);
+}
