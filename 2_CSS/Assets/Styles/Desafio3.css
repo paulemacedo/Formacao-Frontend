@@ -1,0 +1,15 @@
+#desafio3 {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: #4b1b57 5px solid;
+    border-radius: 10px;
+    width: 100px;
+    height: 55px;
+  }
+  
+  .desafio3-h2{
+    color: #886ca1;
+    text-align: center;
+    outline: #918d94 2px solid;
+    outline-offset: 10px;
+  }

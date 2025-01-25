@@ -1,0 +1,268 @@
+/* 4 - External CSS */
+body {
+  padding-bottom: 500px;
+}
+
+h3 {
+  color: green;
+}
+
+/* p {
+    color: violet;
+} */
+
+/* classes */
+.paragraph {
+  color: orange;
+  background-color: black;
+  padding: 5px;
+}
+
+/* IDs */
+#exclusive-title {
+  color: yellow;
+  background-color: purple;
+  padding: 10px;
+}
+
+/* Ordem das Regras */
+
+/* h2 {
+  border-bottom: 2px solid red;
+} */
+
+.titulo {
+  border-bottom: 4px solid blue;
+}
+
+#outro-titulo {
+  border-bottom: 6px solid green;
+}
+
+/* Nome de cores */
+.color-name {
+  color: crimson;
+}
+
+/* Hexadecimal */
+.color-hex {
+  color: #4b1b57;
+}
+
+/* Aprofundando em HEX */
+.simple-hex {
+  color: #275;
+}
+
+/* RGB */
+.color-rgb {
+  color: rgb(110, 0, 0);
+}
+
+/* Mixed RGB */
+.mixed-rgb {
+  color: rgb(199, 161, 114);
+}
+
+/* RGBA */
+.color-rgba {
+  color: rgba(197, 183, 51, 0.4);
+}
+
+/* HSL */
+.color-hsl {
+  color: hsl(286, 80%, 35%);
+}
+
+/* Background */
+.bg {
+  background-color: lightblue;
+  color: #275;
+}
+
+.bg-2 {
+  background-color: lightcoral;
+}
+
+/* Background opacity */
+.bg-opacity {
+  background-color: rgb(182, 219, 182);
+  opacity: 0.5;
+}
+
+.bg-opacity-2 {
+  background-color: rgb(75, 14, 59);
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+}
+
+/* RGBA com opacidade */
+.rgba-opacity {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+/* Background Image */
+.bg-image {
+  background-image: url(../img/image.png);
+}
+
+.not-centered-bg,
+.centered-bg {
+  height: 400px;
+  width: 500px;
+  background-image: url(../img/image.png);
+  color: #ffffff;
+}
+
+/* Centralizando o background */
+.centered-bg {
+  background-position: center;
+  background-size: cover;
+}
+
+/* Largura e altura */
+.height-width {
+  height: 200px;
+  width: 300px;
+  background-color: #275;
+}
+
+.height-width-2 {
+  height: 200px;
+  background-color: #333;
+  background-size: cover;
+}
+
+.without-padding,
+.padding,
+.padding-top,
+.padding-right {
+  background-color: #275;
+}
+.padding {
+  background-color: #4b1b57;
+  padding: 20px;
+}
+
+.padding-top-left {
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #333;
+}
+.padding-bottom-right {
+  padding-bottom: 20px; 
+  background-color: #beae1b ;
+  padding-right: 20px;  
+}
+
+.padding-shorthand {
+  padding: 20px 10px 30px 5px;
+  background-color: #4b1b57;
+}
+
+.padding-shorthand-2 {
+  padding: 20px 0px;
+  background-color: #275;
+}
+
+/* padding com width */
+.without-border-box {
+  background-color: #444;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+}
+
+.border-box {
+  background-color: #666;
+  color: #fff;
+  width: 400px;
+  padding: 50px;
+  box-sizing: border-box; /* Resolve o problema de largura */
+}
+
+/* Border */
+.border {
+  border: 5px solid #4b1b57;
+  padding: 10px;
+}
+
+.border {
+  border: 5px solid #4b1b57;
+  padding: 10px;
+}
+
+/* Borda individual */
+.border-left {
+  border-left: 5px solid #4b1b57;
+  background-color: #886ca1;
+  padding: 25px;
+}
+/* Borda individual */
+.border-bottom {
+  border-bottom: 10px solid #366300;
+  background-color: rgb(106, 160, 124);
+  padding: 25px;
+}
+
+/* Bordas arredondadas */
+.border-radius {
+  border: 5px solid #4b1b57;
+  padding: 10px;
+  border-radius: 17px;
+}
+
+/* Bordas arredondadas */
+.border-radius-2 {
+  background-color: #886ca1;
+  padding: 10px;
+  border-radius: 17px;
+}
+
+/* Margem */
+
+.margin {
+  margin: 10px;
+  background-color: #4b1b57;
+}
+
+.margin-top {
+  
+  margin-top: 10px;
+  background-color: #886ca1;
+  padding: 10px;
+}
+
+.margin-shorthand {
+  margin: 10px 5px 20px 0px;
+  background-color: #666;
+}
+
+/* Box model */
+
+.box-model {
+  margin: 20px;
+  padding: 20px, 25px;
+  border: #4b1b57 5px solid;
+  border-radius: 7px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+}
+
+#desafio3 {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: #4b1b57 5px solid;
+  border-radius: 10px;
+  width: 100px;
+  height: 55px;
+}
+
+.desafio3-h2{
+  color: #886ca1;
+  text-align: center;
+  outline: #918d94 2px solid;
+  outline-offset: 10px;
+}
