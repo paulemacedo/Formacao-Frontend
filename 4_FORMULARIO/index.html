@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Formulários HTML</h2>
+  <!-- 1 - Primeiro formulário -->
+  <!-- 2 - Atributos do formulário -->
+  <form action="register.php" method="get">
+    <div> 
+      <label>Nome:</label>
+      <input type="text"/>
+    </div>
+    <!-- 3 - atributo nome -->
+    <div>
+      <!-- 4 - Atributo label -->
+      <label for="age">Idade:</label>
+      <input type="text" name="age"/>
+    </div>
+    <!-- 6 - select -->
+    <div>
+      <label for="job">Selecione a sua profissão:</label>
+      <select name="job">
+        <option value="dev">programador</option>
+        <option value="designer">designer</option>
+        <option value="analyst">analista</option>
+      </select>
+    </div>
+    <!-- 7 - selected -->
+    <div>
+      <label for="contract">Você leu os termos do contrato?</label>
+      <select name="contract">
+        <option value="yes">Sim</option>
+        <option value="no" selected>Não</option>
+      </select>
+    </div>
+    <!-- 8 - multiplas opções -->
+    <div>
+      <label for="hobbies">Selecione seus hobbies:</label>
+      <select name="hobbies" multiple>
+        <option value="reading">Leitura</option>
+        <option value="sports">Esportes</option>
+        <option value="traveling">Viagens</option>
+        <option value="music">Música</option>
+      </select>
+    </div>
+    <!-- 9 - textarea -->
+    <div>
+      <label for="message">Mensagem:</label>
+      <textarea name="message"></textarea>
+    </div>
+    <!-- 10 - fieldset e legend -->
+     <!-- servem para agrupar elementos do formulário e fornecer uma legenda descritiva para o grupo -->
+     <div>
+      <fieldset>
+        <legend>Preencha as suas informações:</legend>
+        <label for="firstname">Nome:</label>
+        <input type="text" name="firstname"/>
+        <label for="lastname">Sobrenome:</label>
+        <input type="text" name="lastname"/>
+      </fieldset>
+    </div>
+    <!-- 11 - datalist -->
+    <div>
+      <label for="browser">Escolha o seu navegador:</label>
+      <input list="browsers" name="browser"/>
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+        <option value="Opera">
+      </datalist>
+    </div>
+    <!-- 12 - senha -->
+    <div>
+      <label for="password">Senha:</label>
+      <input type="password" name="password"/>
+    </div>
+    <!-- 14 - radio buttons -->
+    <div>
+      <label for="gender">Gênero:</label>
+      <div class="radio">
+        <input type="radio" name="gender" value="male"/> Masculino
+      </div>
+      <div class="radio">
+        <input type="radio" name="gender" value="female"/> Feminino
+      </div>
+      <div class="radio">
+        <input type="radio" name="gender" value="other"/> Outro
+      </div>
+    </div>
+    <!-- 15 - checkbox -->
+    <label for="subscribe">Deseja receber novidades?</label>
+    <div class="radio">
+      <input type="checkbox" name="subscribe" value="yes"/> Sim
+    </div>
+    <!-- 13 - resetar formulário -->
+    <input type="reset" value="Resetar"/>
+    <!-- 5 - envio do formulário -->
+     <input type="submit" value="Enviar"/>
+  </form>  
+</body>
+</html>
